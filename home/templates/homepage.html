@@ -93,10 +93,10 @@
                                     <img class="card-img-top" src="{% static 'images/graw.png' %}" alt="Card image cap">
                                      {% if user.is_authenticated %}
                                     <div class="card-body">
-                                        <a href="/entry/submit_entry"><button  href="{% url 'auth_login' %}" type="button" class="btn-sm btn-primary"><i class="fa fa-folder-open"></i>&nbsp; Financial Statement</button></a>
-                                    <a href="/entry/entries"><button type="button" class="btn-sm btn-warning"><i class="fa fa-list-alt"></i>&nbsp; Letters</button></a>
-                                    <a href="/entry/new_dispatch"><button type="button" class="btn-sm btn-success"><i class="fa fa-edit"></i>&nbsp; TCC</button></a>
-                                    <a href="/todo/mine"><button type="button" class="btn-sm btn-danger"><i class="fa fa-tasks"></i>&nbsp; Turn Over</button></a>
+                                        <a href="/financial/submit_financial"><button type="button" class="btn-sm btn-primary"><i class="fa fa-folder-open"></i>&nbsp; Financial Statement</button></a>
+                                    <a href="/letter/submit_letter"><button type="button" class="btn-sm btn-warning"><i class="fa fa-list-alt"></i>&nbsp; Letters</button></a>
+                                    <a href="/tcc/submit_tcc"><button type="button" class="btn-sm btn-success"><i class="fa fa-edit"></i>&nbsp; TCC</button></a>
+                                    <a href="/turnover/submit_turnover"><button type="button" class="btn-sm btn-danger"><i class="fa fa-tasks"></i>&nbsp; Turn Over</button></a>
                                    
                                     </div>
                                      {% else %}
